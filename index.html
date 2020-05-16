@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="stylesheet.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/59b8a55281.js" crossorigin="anonymous"></script>
+    <script src="1.js" defer></script>
+    <title>Youtube Clone</title><link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- header -->
+    <header>
+        <div class="logo">
+            <i class="fab fa-youtube"></i>
+            <a href="">YouTube</a>
+        </div>
+        <ul class="header_icons">
+            <li><a href=""><i class="fas fa-search"></i></a></li>
+            <li><a href=""><i class="fas fa-bars"></i></a></li>
+        </ul>
+    </header>
+    
+    <!-- video box -->
+    <video controls class="player"> 
+        <source src=http://techslides.com/demos/sample-videos/small.webm type=video/webm> 
+    </video>
+
+    <!-- main video items -->
+    <main>
+        <!-- video info -->
+        <section class="info">
+            <span class="title">클론코딩 유튜브 따라 만들기, HTML/CSS/Javascript 기초 강의편, 초심자를 위한 클론코딩</span>
+            <span class="watch">조회수 4,508회</span>
+            <ul class="share">
+                <li>
+                    <i class="fas fa-thumbs-up active"></i>
+                    <span>181</span>
+                </li>
+                <li>
+                    <i class="fas fa-thumbs-down"></i>
+                    <span>2</span>
+                </li>
+                <li>
+                    <i class="fas fa-share"></i>
+                    <span>공유</span>
+                </li>
+                <li>
+                    <i class="fas fa-cart-arrow-down"></i>
+                    <span>저장</span>
+                </li>
+                <li>
+                    <i class="fas fa-flag"></i>
+                    <span>신고</span>
+                </li>
+            </ul>
+            <div class="user">
+                <div class="user_Info">
+                    <img src="" />
+                    <div class="userName">
+                        <span class="name">코딩돌이</span>
+                        <span class="subscriber">구독자 3.85천명</span>
+                    </div>
+                </div>
+                <div class="subscribe">
+                    <i class="fab fa-youtube"></i>
+                    <span>구독</span>
+                </div>
+            </div>
+            <div class="comment">
+                <div class="comment_nav">
+                    <span>댓글 194개</span>
+                    <div class="listBtn"><i class="fas fa-sort-down"></i></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- videoList -->
+        <section class="videoList">
+            <nav>
+                <span>다음 동영상</span>
+                <div class="autoPlayToggle">
+                    <span>자동재생</span>
+                    <i class="fas fa-toggle-on"></i>
+                </div>
+            </nav>
+            <ul>
+                <li>
+                    <div class="videoBox"><img src="" class="videoImg" /></div>
+                    <div class="videoInfo">
+                        <span class="title">김성현 스타 오늘은 어떤 전략을 써볼까?</span>
+                        <span class="maker">김성현 스타</span>
+                        <span class="view">18.5k view</span>
+                    </div>
+                    <i class="fas fa-ellipsis-v"></i>
+                </li>
+                <li>
+                    <div class="videoBox"><img src="" class="videoImg" /></div>
+                    <div class="videoInfo">
+                        <span class="title">[지금만 무료] GSAT 불사트, 물사트 완벽 대비! 수리영역</span>
+                        <span class="maker">지사트 연구소</span>
+                        <span class="view">23.4k view</span>
+                    </div>
+                    <i class="fas fa-ellipsis-v"></i>
+                </li>
+                <li>
+                    <div class="videoBox"><img src="" class="videoImg" /></div>
+                    <div class="videoInfo">
+                        <span class="title">스승의 날 기념 장민철님과 골드3 도전</span>
+                        <span class="maker">장민철 유튜브</span>
+                        <span class="view">0.9k view</span>
+                    </div>
+                    <i class="fas fa-ellipsis-v"></i>
+                </li>
+                <li>
+                    <div class="videoBox"><img src="" class="videoImg" /></div>
+                    <div class="videoInfo">
+                        <span class="title">1시간 재생, 슬기로운 의사생활 조정성 - 아로하 / 가사 Lyrics</span>
+                        <span class="maker">슬기로운 의사생활 유튜브 채널</span>
+                        <span class="view">1.6k view</span>
+                    </div>
+                    <i class="fas fa-ellipsis-v"></i>
+                </li>
+                <li>
+                    <div class="videoBox"><img src="" class="videoImg" /></div>
+                    <div class="videoInfo">
+                        <span class="title">[Playlist] 아이유 발라드 Best 30 노래 모음, 여름에 듣기 좋은 노래</span>
+                        <span class="maker">아이유는 어느 집 아이유?</span>
+                        <span class="view">10.5k view</span>
+                    </div>
+                    <i class="fas fa-ellipsis-v"></i>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <script src="https://vjs.zencdn.net/7.7.6/video.js"></script>
+</body>
+</html>

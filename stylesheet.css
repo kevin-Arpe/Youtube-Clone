@@ -1,0 +1,273 @@
+:root {
+    --point_color: #bb0a1e;
+    --bg_color: #c5c5c5;
+    --header_color: #0b0101;
+    --white: #fff;
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif; 
+    background-color: var(--bg_color);   
+}
+
+header {
+    background-color: var(--header_color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 6px 12px;
+}
+
+header .logo {
+    font-size: 18px;
+}
+
+header .logo i {
+    color: var(--point_color);
+}
+
+header .logo a {
+    text-decoration: none;
+    color: var(--bg_color);
+}
+
+header .header_icons {
+    display: flex;
+    padding: 6px 12px;
+}
+
+header .header_icons li {
+    padding-left: 12px;
+}
+
+header .header_icons li a {
+    text-decoration: none;
+    color: var(--bg_color);
+}
+
+.player {
+    width: 100%;
+    height: auto;
+}
+
+main {
+    display: flex;
+    background-color: var(--white);
+    padding: 6px 12px;
+}
+
+.info {
+    width: 60%;
+}
+
+.info .title {
+    margin: 0;
+    padding: 0 12px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}
+
+.info .watch {
+    font-size: 10px;
+    color: gray;
+    margin: 0;
+    padding: 0 12px;
+}
+
+.share {
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid gray;
+    list-style: none;
+    padding: 12px 0;
+    margin: 0;
+}
+
+.share li {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.share li i {
+    padding: 6px 0;
+}
+
+.share li .active {
+    color: #2a78e3;
+}
+
+.share li span {
+    margin: 0;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid gray;
+    padding: 6px 12px;
+}
+
+.user .user_Info {
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.userName {
+    display: flex;
+    flex-direction: column;
+}
+
+.userName .name {
+    margin: 0;
+    font-size: 14px;
+}
+
+.userName .subscriber {
+    font-size: 10px;
+    color: gray;
+    margin: 0;
+}
+
+.user .subscribe {
+    display: flex;
+    align-items: center;
+    color: var(--point_color);
+}
+
+.user .subscribe i {
+    margin-right: 8px;
+}
+
+.comment {
+    padding: 12px;
+    border-bottom: 1px solid gray;
+}
+
+.comment_nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.comment_nav span {
+    margin: 0;
+}
+
+.videoList {
+    width: 40%;
+}
+
+.videoList nav span {
+    margin: 0;
+    padding: 6px 12px;
+}
+
+.videoList nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.videoList nav .autoPlayToggle {
+    display: flex;
+    align-items: center;
+}
+
+.videoList nav .autoPlayToggle span {
+    margin-right: 16px;
+}
+
+.videoList nav .autoPlayToggle i {
+    color: #2a78e3;
+    padding: 0;
+    font-size: 24px;
+}
+
+.videoList ul {
+    list-style: none;
+    padding: 0;
+}
+
+.videoList ul li {
+    padding: 6px 12px;
+    display: flex;
+}
+
+.videoList ul li .videoBox {
+    background-color: var(--bg_color);
+    width: 35%;
+}
+
+.videoList ul li .videoBox .videoImg {
+    width: 100%;
+    height: 100%;
+}
+
+.videoList ul li .videoInfo {
+    width: 60%;
+    padding: 6px 12px;
+    display: flex;
+    flex-direction: column;
+}
+
+.videoList ul li .videoInfo .title {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}
+
+.videoList ul li .videoInfo .maker {
+    color: gray;
+    font-size: 14px;
+}
+
+.videoList ul li .videoInfo .view {
+    color: gray;
+    font-size: 12px;
+}
+
+.videoList ul li i {
+    width: 5%;
+    font-size: 16px;
+    text-align: right;
+    color: gray;
+    position: relative;
+    top: 10px;
+}
+
+@media screen and (max-width: 974px) {
+    body {
+        width: 100%;
+    }
+
+    main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .info {
+        width: 100%;
+    }
+
+    .videoList {
+        width: 100%;
+    }
+
+    .videoList nav, .videoList ul {
+        width: 100%;
+    }
+
+    .videoList ul li .videoInfo {
+        padding: 6px 12px;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        overflow: hidden;
+    }
+}
